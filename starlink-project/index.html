@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starlink</title>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/png" />
+
+    <!-- Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header position-absolute top-0 start-0 w-100 z-3">
+      <nav class="navbar text-uppercase text-white" style="letter-spacing: 1px">
+        <div class="container-xxl py-3 px-5">
+          <a class="navbar-brand" href="/">
+            <img src="./assets/logo_white.png" alt="Starlink" width="95" />
+          </a>
+
+          <div class="d-flex flex-fill px-5" id="navbarNavAltMarkup">
+            <div class="me-auto d-flex gap-4">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Residential</a
+              >
+              <a class="nav-link text-white" href="#">Roam</a>
+              <a class="nav-link text-white" href="#">Boats</a>
+            </div>
+            <div class="d-flex gap-4">
+              <a
+                class="nav-link text-decoration-underline link-offset-2"
+                href="#"
+                >Personal</a
+              >
+              <div
+                class="vr"
+                style="width: 2px; background-color: #fafafa"
+              ></div>
+              <a class="nav-link" href="#">Business</a>
+            </div>
+          </div>
+
+          <button
+            class="navbar-toggler border-transparent rounded-circle p-1 border-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#fafafa"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end bg-black text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button button-white"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Sign In</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Help Center</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      id="hero"
+      class="hero d-flex justify-content-center align-items-center"
+    >
+      <div class="flex-column text-center w-75">
+        <div>
+          <h1 class="fw-bold" style="font-size: 52px">
+            HIGH-SPEED INTERNET<br />AROUND THE WORLD
+          </h1>
+          <span style="font-size: 25px">Connect at home or on the go.</span>
+        </div>
+
+        <div style="height: 100px; width: 100%"></div>
+        <div
+          class="mt-5 mx-auto d-flex justify-content-center align-items-end gap-3"
+        >
+          <div class="w-50 text-start">
+            <label for="exampleInputEmail1" class="form-label fw-bold"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control form-input"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              style="font-size: 16px; height: 50px"
+              placeholder="Enter email"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-light px-5 text-uppercase fw-bold"
+            style="font-size: 12px; height: 50px"
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-paralax">
+      <section id="produk" class="row px-4 py-5 gap-3">
+        <div class="col p-0 produk-item-container">
+          <img
+            src="./assets/home_b_residential_m.webp"
+            alt="Res"
+            class="produk-image"
+          />
+        </div>
+        <div class="col p-0 produk-item-container">
+          <img
+            src="./assets/home_b_roam_m.webp"
+            alt="Res"
+            class="produk-image"
+          />
+        </div>
+        <div class="col p-0 produk-item-container">
+          <img src="./assets/home_boats_m.jpg" alt="Res" class="produk-image" />
+        </div>
+      </section>
+
+      <section id="about" class="mt-3 text-center" style="margin-bottom: 8rem">
+        <h1 class="text-uppercase fw-bold">
+          STARLINK FOR BUSINESSES AND POWER USERS
+        </h1>
+        <p class="text-uppercase">
+          Reliable high-speed internet designed to keep businesses connected.
+        </p>
+      </section>
+
+      <section
+        class="w-100 vh-100"
+        style="
+          background-image: url('./assets/home_b_feature1_d.webp');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="px-5 w-50" style="padding-top: 8rem">
+          <h2 class="fw-bold fs-1">
+            CONNECTIVITY WHERE YOU <br />LEAST EXPECT IT
+          </h2>
+          <p>
+            Streaming, video calls, online gaming, remote working and more are
+            now possible in even the most remote locations thanks to the world’s
+            most advanced internet system.
+          </p>
+        </div>
+      </section>
+
+      <section id="info container-xl" style="padding: 12rem 1rem">
+        <div class="row gap-5">
+          <div
+            class="col w-100 d-flex align-items-start justify-content-center flex-column"
+          >
+            <h2 class="fw-bold">NO CONTRACTS</h2>
+            <p style="font-size: 14px">
+              Long term contracts prevent both you and Starlink from making
+              sensible changes when necessary.
+            </p>
+            <p style="font-size: 14px">
+              With Starlink, it is a fair deal both ways. Starlink can adjust
+              terms and pricing as needed, and you can cancel at any time, for
+              any reason.
+            </p>
+          </div>
+          <img
+            src="./assets/home_b_feature2_m.webp"
+            class="col ratio-1x1 w-100"
+          />
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-black py-5 px-4">
+      <div class="d-flex justify-content-between">
+        <ul
+          class="d-flex gap-4"
+          style="
+            list-style: none;
+            font-size: 12px;
+            padding-left: 0px !important;
+          "
+        >
+          <li>Carrers</li>
+          <li>Satelite Operator</li>
+          <li>Gear Store</li>
+        </ul>
+        <div>
+          <p style="font-size: 12px">
+            Interested in staying up to date with Starlink?
+          </p>
+        </div>
+      </div>
+      <div class="d-flex gap-4" style="font-size: 12px">
+        <span>Starlink © 2024</span>
+        <span>Starlink is a division of SpaceX. Visit us at spacex.com</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header");
+        const navHeight = header.getBoundingClientRect().height;
+
+        if (window.scrollY > navHeight) {
+          header.classList.add("fixed-header");
+          header.classList.add("position-fixed");
+          header.classList.remove("position-absolute");
+        } else {
+          header.classList.add("position-absolute");
+          header.classList.remove("fixed-header");
+          header.classList.remove("position-fixed");
+        }
+      });
+    </script>
+  </body>
+</html>

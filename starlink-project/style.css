@@ -1,0 +1,82 @@
+:root,
+[data-bs-theme="light"] {
+  --bs-navbar-toggler-focus-width: 0 !important;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+  color: #fafafa;
+}
+
+.fixed-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  --bs-navbar-toggler-focus-width: 0 !important;
+  --bs-border-width: 0 !important;
+}
+
+.navbar-toggler:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-brand > img {
+    width: 142px !important;
+  }
+}
+
+.hero {
+  background-image: url("./assets/home_b_hero_d.webp");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.form-input,
+.form-input:hover,
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: #fafafa;
+  backdrop-filter: blur(10px);
+  box-shadow: none;
+  padding: 0rem 2rem;
+}
+
+.form-input::placeholder {
+  color: #fafafa;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.bg-paralax {
+  background-image: url("./assets/home_illustriation1_m.webp");
+  background-attachment: fixed;
+  background-color: black;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left 24px center;
+}
+
+.produk-item-container {
+  height: 700px;
+  overflow: clip;
+}
+
+.produk-image {
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.produk-image:hover {
+  transform: scale(1.05);
+}
